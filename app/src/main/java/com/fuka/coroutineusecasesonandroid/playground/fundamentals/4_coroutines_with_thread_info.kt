@@ -5,6 +5,10 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.runBlocking
 
+// Everything running in the same thread (main)
+// runBlocking:Runs a new coroutine and blocks the current thread interruptibly until its completion. This function should not be used from a coroutine.
+
+
 fun main() = runBlocking {
     println("main starts")
     joinAll(
